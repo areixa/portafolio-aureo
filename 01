@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Operaciones & Automatización de Procesos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f4f7f6',
+                            500: '#0d9488', // Teal moderno y profesional
+                            900: '#111827', // Slate oscuro para contraste
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tight text-gray-900">Ops<span class="text-teal-600">&</span>Automation</span>
+            <div class="space-x-6 text-sm font-medium text-gray-600">
+                <a href="#impacto" class="hover:text-teal-600 transition-colors">Impacto</a>
+                <a href="#casos" class="hover:text-teal-600 transition-colors">Casos de Estudio</a>
+                <a href="#stack" class="hover:text-teal-600 transition-colors">Stack Técnico</a>
+                <a href="#contacto" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition-colors">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+        <div class="max-w-3xl">
+            <span class="inline-block px-3 py-1 bg-teal-100 text-teal-800 text-xs font-semibold rounded-full mb-4">
+                Operations Manager & Automation Specialist
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                Transformo procesos caóticos en <span class="text-teal-600">flujos automatizados</span> rentables.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                Especializada en arquitectura de flujos de trabajo, integración de sistemas (APIs, n8n, Make) y optimización operativa orientada a escala y reducción de costos.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#casos" class="bg-teal-600 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-teal-700 transition-all">
+                    Ver Casos de Éxito
+                </a>
+                <a href="#contacto" class="bg-white border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all">
+                    Agendar Llamada Estratégica
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Métricas / Impacto de Negocio -->
+    <section id="impacto" class="bg-white py-16 border-y border-gray-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-teal-600 mb-8">Resultados Medibles de Negocio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <p class="text-4xl font-extrabold text-gray-900 mb-2">-40%</p>
+                    <p class="text-sm text-gray-600 font-medium">Reducción en tiempo de ciclo operativo</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <p class="text-4xl font-extrabold text-teal-600 mb-2">99.8%</p>
+                    <p class="text-sm text-gray-600 font-medium">Precisión en sincronización de datos cross-platform</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <p class="text-4xl font-extrabold text-gray-900 mb-2">+15 hrs</p>
+                    <p class="text-sm text-gray-600 font-medium">Ahorradas por semana por colaborador</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Estudio / Proyectos Clave -->
+    <section id="casos" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="mb-12">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-teal-600 mb-2">Proyectos & Casos de Estudio</h2>
+            <h3 class="text-3xl font-bold text-gray-900">Arquitecturas de Soluciones Operativas</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Caso 1 -->
+            <article class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="px-2.5 py-0.5 bg-blue-100 text-blue-800 text-xs font-semibold rounded">n8n</span>
+                    <span class="px-2.5 py-0.5 bg-green-100 text-green-800 text-xs font-semibold rounded">Webhook API</span>
+                    <span class="px-2.5 py-0.5 bg-purple-100 text-purple-800 text-xs font-semibold rounded">CRM</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">Sincronización Automática de Leads & Pipeline CRM</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Diseño de flujo sin código/bajo código en n8n para capturar leads mediante webhooks desde múltiples fuentes, validar JSON payload y enrutar datos a CRM en tiempo real con alertas a Slack/WhatsApp.
+                </p>
+                <div class="border-t border-gray-100 pt-4 flex justify-between items-center text-xs text-gray-500">
+                    <span>Impacto: Eliminación del 100% del ingreso manual de datos</span>
+                    <span class="text-teal-600 font-semibold">Ver Flujo →</span>
+                </div>
+            </article>
+
+            <!-- Caso 2 -->
+            <article class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="px-2.5 py-0.5 bg-amber-100 text-amber-800 text-xs font-semibold rounded">Make</span>
+                    <span class="px-2.5 py-0.5 bg-gray-100 text-gray-800 text-xs font-semibold rounded">Odoo / ERP</span>
+                    <span class="px-2.5 py-0.5 bg-red-100 text-red-800 text-xs font-semibold rounded">Facturación</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">Automatización de Cobros y Conciliación Fiscal</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Orquestación de procesos de facturación recurrente conectando pasarelas de pago con ERP empresarial. Generación automatizada de reportes de conciliación bancaria y métricas de cartera.
+                </p>
+                <div class="border-t border-gray-100 pt-4 flex justify-between items-center text-xs text-gray-500">
+                    <span>Impacto: Reducción de tiempo de facturación de 3 días a 5 minutos</span>
+                    <span class="text-teal-600 font-semibold">Ver Flujo →</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Stack Tecnológico -->
+    <section id="stack" class="bg-gray-900 text-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-teal-400 mb-2">Stack de Herramientas</h2>
+                <h3 class="text-3xl font-bold text-white">Ecosistema Tecnológico de Automatización</h3>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <h5 class="text-teal-400 font-bold mb-2">Automatización</h5>
+                    <p class="text-sm text-gray-300">n8n, Make, Zapier, Webhooks, REST APIs</p>
+                </div>
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <h5 class="text-teal-400 font-bold mb-2">CRMs & ERPs</h5>
+                    <p class="text-sm text-gray-300">Odoo Admin/Studio, Pipedrive, HubSpot, Kommo</p>
+                </div>
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <h5 class="text-teal-400 font-bold mb-2">Operaciones & KPIs</h5>
+                    <p class="text-sm text-gray-300">SOPs, KPI Dashboards, Mapeo de Procesos, JSON</p>
+                </div>
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <h5 class="text-teal-400 font-bold mb-2">Sistemas & Infra</h5>
+                    <p class="text-sm text-gray-300">SAP-Basis, WHMCS, Git / GitHub, Linux Admin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / CTA -->
+    <section id="contacto" class="max-w-6xl mx-auto px-6 py-20 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">¿Listo para escalar tus operaciones?</h2>
+            <p class="text-gray-600 mb-8">
+                Diseño la infraestructura operativa y automatizo las tareas repetitivas de tu equipo para que puedas enfocar los recursos en crecer.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="mailto:tu-email@dominio.com" class="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium shadow-md hover:bg-teal-700 transition-all">
+                    Enviar Correo Directo
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition-all">
+                    Perfil de LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-8 text-center text-xs text-gray-500">
+        <p>© 2026 • Portafolio de Operaciones y Automatización de Procesos.</p>
+    </footer>
+
+</body>
+</html>
